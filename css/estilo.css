@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+li {
+    list-style: none;
+    margin: 16px;
+    padding: 8px;
+    cursor: pointer;
+}
+h2 {
+    font-size: 32px;
+}
+h1 {
+     color: white;
+     font-size: 48px;
+     text-shadow: 5px 5px #558ABB;
+}
+li:hover{
+    background-color: lightblue; 
+}
+ul {
+    display: flex;
+}
+footer{
+    background-image: linear-gradient(to top,transparent,lightcoral)      /* ANIMACIONES-GRADIENTE FOOTER */
+}
+
+header{
+    background-image: linear-gradient(to bottom,lightcoral,transparent)    /* ANIMACIONES GRADIENTE HEADER */
+ }
+h1{
+    transform: rotate(-10deg);
+}
+ .logoP{
+	width: 200px;
+	height: auto;
+}
+.Header, .Footer, .Hero, .Section-A, .Section-B, .Section-C, .Section-D{
+    background-color: lightgray;
+}
+.Header{
+    grid-area: Header;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: lightgray;
+}
+.Footer{
+    grid-area: Footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+/* ARCHIVO INDEX */
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 800px 400px 400px 150px;
+    grid-gap: 0px 0px;
+    grid-template-areas:
+    "Header Header"
+    "Hero Hero"
+    "Section-A Section-B"
+    "Section-C Section-D"
+    "Footer Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+.Hero{
+    grid-area: Hero; 
+    background-image: url(https://images.unsplash.com/photo-1546237769-6f84ec1a512a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section-A{
+    grid-area: Section-A;
+    background-image: url(https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.Section-B{
+    grid-area: Section-B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section-C{
+    grid-area: Section-C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section-D{
+    grid-area: Section-D;
+    background-image: url(https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=503&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ARCHIVO NOSOTROS*/
+.nosocontenedor {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130px 50px 380px 380px 50px 130px;
+    grid-auto-columns: 1fr;
+    grid-gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header Header"
+    "Noshero Noshero"
+    "fotop txtp"
+    "filo photof"
+    "video video"
+    "Footer Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+.Noshero{
+    grid-area:Noshero;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fotop {
+    grid-area: fotop;
+    background-image: url(https://media.istockphoto.com/photos/freshly-baked-just-for-you-picture-id622072108?k=20&m=622072108&s=612x612&w=0&h=ySvIfqBsK3n9w6vD-DCUluxG-Rfj2Pw724-7xv1jqTA=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.txtp{
+    grid-area: txtp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filo{
+    grid-area: filo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px;
+}
+.photof{
+    grid-area: photof;
+    background-image: url(https://images.unsplash.com/photo-1537734796389-e1fc293cf856?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.video{
+    grid-area:video;
+}
+/* VISTA MOBILE: ARCHIVO INDEX */
+
+
+@media only screen and (max-width: 768px){
+.container {  
+    display: grid;                                  
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 600px 400px 400px 400px 400px 150px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header"
+    "Hero"
+    "Section-B"
+    "Section-A"
+    "Section-C"
+    "Section-D"
+    "Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+
+/* VISTA MOBILE: ARCHIVO NOSOTROS */
+
+@media only screen and (max-width: 768px){
+.nosocontenedor {  
+    display: grid;									
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 50px 400px 400px 400px 400px 50px 150px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header"
+    "Noshero"
+    "txtp"
+    "fotop"
+    "filo"
+    "photof"
+    "video"
+    "Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+
+/* VISTA DESKTOP:  ARCHIVO INDEX*/
+
+@media only screen and (min-width: 1024px){
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 800px 400px 400px 150px;
+    grid-template-areas:
+    "Header Header"
+    "Hero Hero"
+    "Section-A Section-B"
+    "Section-C Section-D"
+    "Footer Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+/* VISTA DESKTOP: ARCHIVO NOSOTROS */
+
+@media only screen and (min-width: 1024px){
+.nosocontenedor {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130px 50px 380px 380px 50px 130px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header Header"
+    "Noshero Noshero"
+    "fotop txtp"
+    "filo photof"
+    "video video"
+    "Footer Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+
+/* ANIMACIONES */
+ p{
+    background-image: linear-gradient (blue,lightcoral)
+ }
